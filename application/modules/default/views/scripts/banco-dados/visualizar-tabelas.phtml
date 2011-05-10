@@ -1,0 +1,32 @@
+<h2 class="formulario-titulo">
+    Visualizar Tabelas
+</h2>
+
+<div class="tabelas_banco">
+
+    <?php foreach($this->dados as $schemas => $tabelas): ?>
+    <?php foreach($tabelas as $tabela => $campos): ?>
+    <span class="tabela">
+        <div class="nome"><?php echo $schemas . '.' . $tabela;?></div>
+        <div class="campos">
+            <table>
+                <?php foreach($campos as $campo => $dadosCampo): ?>
+                <tr>
+                    <td>
+                        <?php echo $this->campoTabela($campo, $dadosCampo)->imagem; ?>
+                    </td>
+                    <td>
+                        <?php echo $this->campoTabela($campo, $dadosCampo)->nome; ?>
+                    </td>
+                    <td>
+                        <?php echo $this->campoTabela($campo, $dadosCampo)->tipo; ?>
+                    </td>
+                </tr>
+                <?php endforeach; ?>
+            </table>
+        </div>
+    </span>
+    <?php endforeach; ?>
+    <?php endforeach; ?>
+
+</div>

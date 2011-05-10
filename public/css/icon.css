@@ -1,0 +1,18 @@
+.botao-excluir{
+    background-image: url('/images/icon/16_16/excluir.png');
+    margin: 0px;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    border: 0px;
+    cursor: pointer;
+}
+.botao-editar{
+    background-image: url('/images/icon/16_16/editar.png');
+    margin: 0px;
+    padding: 0;
+    width: 16px;
+    border: 0px;
+    height: 16px;
+    cursor: pointer;
+}

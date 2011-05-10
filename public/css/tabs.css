@@ -1,0 +1,21 @@
+#tab-formularios { margin: 5px;  }
+#tab-formularios li .ui-icon-close { float: left; margin: 0.4em 0.2em 0 0; cursor: pointer; }
+#add_tab { cursor: pointer; }
+
+
+
+.linha-form {
+    min-height: 30px;
+}
+
+.linha-form label {
+    clear: both;
+    float: left;
+    text-align: right;
+    width: 90px;
+    line-height: 20px;
+}
+
+.linha-form .input-txt {
+    width: 200px;
+}

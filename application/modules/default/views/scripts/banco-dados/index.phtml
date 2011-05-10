@@ -1,0 +1,47 @@
+<h2 class="formulario-titulo">
+    Listagem Banco de Dados
+</h2>
+
+<div class="div-menu-listagem width700 Right">
+    <a href="<?php echo $this->baseUrl() . '/banco-dados/cadastrar/'; ?>">Cadastrar</a>
+</div>
+
+<div class="div-listagem width700">
+    <table class="tabela-bordas" cellspacing="1">
+        <tr class="tr-titulo">
+            <td class="width150">
+                Tipo de Banco:
+            </td>
+            <td class="width200">
+                Nome Database:
+            </td>
+            <td class="width250">
+                Host:
+            </td>
+            <td class="width100">
+                Ações:
+            </td>
+        </tr>
+        <?php foreach($this->bancoDados as $db):  ?>
+        <tr class="tr-listagem">
+            <td>
+                <?php echo $db->getIdTipoBancoDados()->getNome(); ?>
+            </td>
+            <td>
+                <?php echo $db->getDatabase(); ?>
+            </td>
+            <td>
+                <?php echo $db->getHost(); ?>
+            </td>
+            <td>
+                <div class="formulario-acoes">
+                    <!--<input type="button" class="formulario-visualizar" />
+                    <input type="button" class="formulario-editar" />
+                    <input type="button" class="formulario-excluir" />-->
+                    <a class="formulario-excluir excluir" href="<?php echo $this->baseUrl() . '/banco-dados/excluir/idBancoDados/' . $db->getIdBancoDados(); ?>"></a>
+                </div>
+            </td>
+        </tr>
+        <?php endforeach; ?>
+    </table>
+</div>

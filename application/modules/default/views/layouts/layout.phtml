@@ -1,0 +1,54 @@
+<?php echo $this->render('cabecalho.phtml'); ?>
+
+<!-- ----------- menu esquerda ----------- -->
+<div class="ui-layout-west">
+    <div class="header">Menu Campos</div>
+    <div class="content">
+        <div class="scrolling-content">
+            <?php echo $this->render('menu/menu_esquerda.phtml'); ?>
+        </div>
+    </div>
+    <!--<div class="footer">Rodape esquerda</div>-->
+</div>
+<!-- ----------- menu esquerda ----------- -->
+
+
+<!-- ----------- Centro ----------- -->
+
+
+<div class="ui-layout-center">
+
+    <div class="header Left VisibleFalse">
+        <?php echo $this->render('menu/menu_centro.phtml'); ?>
+    </div>
+
+    <div class="content">
+        <div class="scrolling-content">
+            <div id="tab-formularios">
+
+            </div>
+        </div>
+    </div>
+    <!--<div class="footer">Rodape Centro</div>-->
+</div>
+
+<!-- ----------- Centro ----------- -->
+
+<!-- ----------- menu direita ----------- -->
+<div class="ui-layout-east">
+
+    <div class="header">Menu Propriedades  </div>
+
+    <div class="content">
+        <div class="scrolling-content">
+            <?php echo $this->render('menu/menu_direita.phtml'); ?>
+        </div>
+    </div>
+
+    <!--<div class="footer">Rodape Direita</div>-->
+</div>
+<!-- ----------- menu direita ----------- -->
+
+
+<?php echo $this->render('dialog.phtml'); ?>
+<?php echo $this->render('rodape.phtml'); ?>

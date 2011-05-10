@@ -1,0 +1,53 @@
+.menu-esquerda-conteudo{
+    margin: 5px;
+}
+
+#menu-lateral{
+    /*margin: 10px;*/
+}
+
+#menu-lateral h3 {
+    font-weight: bold;
+}
+
+#menu-lateral div div{
+    padding: 10px;
+}
+
+.itens-form{
+    width: 100%;
+    margin: 0; padding: 0;
+    font-size: 11px;
+}
+
+.itens-form li{
+    width: 100%;
+    margin: 0 0 5px 0;
+    list-style-type: none;
+}
+
+.itens-form li span.label{
+    padding:0.4em 1em 0.4em 2.4em;
+    display: block;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.itens-form li a{
+    padding:0.4em 1em 0.4em 2.4em;
+    display: block;
+    line-height: 1.4;
+    text-align: left;
+}
+
+
+.itens-form li span.icone{
+    left: 0.5em;
+    margin-top:-8px;
+    position:absolute;
+    top:50%;
+    height:16px;
+    width:16px;
+    display:block;
+    overflow:hidden;
+}

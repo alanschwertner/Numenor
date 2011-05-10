@@ -1,0 +1,166 @@
+<?php
+
+/**
+ * Classe para a tabela config.banco_dados
+ *
+ * Contém a mesma estrutura da tabela, os campos da tabela com os seus Get's e Set's
+ *
+ * Versão: 1.0
+ * Criado Por: Númenor
+ * Data Criação: 13/03/2011 11:04:39
+ * Modificado Por:
+ * Data Modificação:
+ */
+class ConfigBancoDados extends Numenor_Db_DomainObjectAbstract {
+
+    // Define as propriedades
+    protected $_mapper = "ConfigBancoDadosMapper";
+    private $idBancoDados;
+    private $idTipoBancoDados;
+    private $host;
+    private $usuario;
+    private $senha;
+    private $database;
+    private $padrao;
+
+    /**
+     * Seta um valor à propriedade idBancoDados
+     *
+     * @access public
+     * @param integer $idBancoDados
+     */
+    public function setIdBancoDados($idBancoDados) {
+        $this->idBancoDados = $idBancoDados;
+    }
+
+    /**
+     * Retorna o valor da propriedade idBancoDados
+     *
+     * @access public
+     * @return integer
+     */
+    public function getIdBancoDados() {
+        return $this->idBancoDados;
+    }
+
+    /**
+     * Seta um valor à propriedade idTipoBancoDados
+     *
+     * @access public
+     * @param integer $idTipoBancoDados
+     */
+    public function setIdTipoBancoDados($idTipoBancoDados) {
+        $this->idTipoBancoDados = $idTipoBancoDados;
+    }
+
+    /**
+     * Retorna o valor da propriedade idTipoBancoDados
+     *
+     * @access public
+     * @return integer
+     */
+    public function getIdTipoBancoDados() {
+        return $this->idTipoBancoDados;
+    }
+
+    /**
+     * Seta um valor à propriedade host
+     *
+     * @access public
+     * @param character varying $host
+     */
+    public function setHost($host) {
+        $this->host = $host;
+    }
+
+    /**
+     * Retorna o valor da propriedade host
+     *
+     * @access public
+     * @return character varying
+     */
+    public function getHost() {
+        return $this->host;
+    }
+
+    /**
+     * Seta um valor à propriedade usuario
+     *
+     * @access public
+     * @param character varying $usuario
+     */
+    public function setUsuario($usuario) {
+        $this->usuario = $usuario;
+    }
+
+    /**
+     * Retorna o valor da propriedade usuario
+     *
+     * @access public
+     * @return character varying
+     */
+    public function getUsuario() {
+        return $this->usuario;
+    }
+
+    /**
+     * Seta um valor à propriedade senha
+     *
+     * @access public
+     * @param character varying $senha
+     */
+    public function setSenha($senha) {
+        $this->senha = $senha;
+    }
+
+    /**
+     * Retorna o valor da propriedade senha
+     *
+     * @access public
+     * @return character varying
+     */
+    public function getSenha() {
+        return $this->senha;
+    }
+
+    /**
+     * Seta um valor à propriedade database
+     *
+     * @access public
+     * @param character varying $database
+     */
+    public function setDatabase($database) {
+        $this->database = $database;
+    }
+
+    /**
+     * Retorna o valor da propriedade database
+     *
+     * @access public
+     * @return character varying
+     */
+    public function getDatabase() {
+        return $this->database;
+    }
+
+    /**
+     * Seta um valor à propriedade padrao
+     *
+     * @access public
+     * @param boolean $padrao
+     */
+    public function setPadrao($padrao) {
+        $this->padrao = $padrao;
+    }
+
+    /**
+     * Retorna o valor da propriedade padrao
+     *
+     * @access public
+     * @return boolean
+     */
+    public function getPadrao() {
+        return $this->padrao;
+    }
+
+}

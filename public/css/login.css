@@ -1,0 +1,35 @@
+
+*{
+    font-size: 12px;
+}
+
+body {
+    background: #EDEDED;
+}
+
+.login {
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-160px;
+    margin-top:-70px;
+    width: 320px;
+    height: 140px;
+}
+
+.login .titulo{
+    margin: 0.3em;
+    padding-bottom: 4px;
+    padding-left: 0.2em;
+    height: 20px;
+    line-height: 25px;
+
+}
+
+.login .campos {
+    padding: 0.4em;
+}
+
+
+
+

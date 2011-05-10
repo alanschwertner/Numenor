@@ -1,0 +1,16 @@
+.tabelas-bordas{
+    background-color: #979797;
+}
+
+.tabelas-bordas td {
+    background-color: #EDEDED;
+    margin: 0px;
+}
+.tabelas-bordas td.titulo {
+    background: -moz-linear-gradient(center top , #B9E0F5, #92BDD6) repeat scroll 0 0 transparent;
+    /*border: 1px solid #7096AB;*/
+    box-shadow: none;
+    color: #1C4257;
+    outline: medium none;
+    font-weight: bold;
+}

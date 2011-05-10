@@ -1,0 +1,106 @@
+<?php echo $this->doctype(); ?>
+<html>
+    <head>
+        <?php echo $this->headMeta(); ?>
+        <?php echo $this->headTitle(); ?>
+
+        <!-- Estrutura da pagina -->
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl(); ?>/css/plugin/layout/layout.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl(); ?>/css/plugin/spinner/ui.spinner.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl(); ?>/css/plugin/jScrollPane/jScrollPane.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl(); ?>/css/plugin/contextMenu/contextMenu.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl(); ?>/css/plugin/ui/aristo/jquery-ui-1.8.7.custom.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl(); ?>/css/plugin/mbMenu/menu.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl(); ?>/css/plugin/treeview/jquery.treeview.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl(); ?>/css/plugin/tooltip/tipTip.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl(); ?>/css/icon.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl(); ?>/css/tabs.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl(); ?>/css/tabelas.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl(); ?>/css/tamanhos.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl(); ?>/css/menu_tree.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl(); ?>/css/menu_grid.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl(); ?>/css/menu_campos.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl(); ?>/css/itens_formulario.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl(); ?>/css/visualizar_tabelas.css" />
+
+
+
+        <!-- Jquery e plugins -->
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery/jquery-1.4.4.min.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery/plugin/ui/jquery-ui-1.8.11.custom.min.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery/plugin/layout/jquery.layout.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery/plugin/mousewheel/jquery.mousewheel.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery/plugin/scrollpane/jquery.scrollpane.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery/plugin/rightClick/jquery.rightClick.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery/plugin/contextMenu/jquery.contextMenu.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery/plugin/spinner/jquery.ui.spinner.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery/plugin/propertyGrid/jquery.propertyGrid.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery/plugin/json/jquery.json-2.2.min.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery/plugin/metadata/jquery.metadata.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery/plugin/mbMenu/mbMenu.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery/plugin/hoverIntent/jquery.hoverIntent.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery/plugin/treeview/jquery.treeview.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery/plugin/tooltip/jquery.tipTip.js"></script>
+
+        <!-- responsavel em montar o layout da pagina -->
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery/plugin/layout/layout.js"></script>
+
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/globais.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/msg.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/tabs.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/dialogs.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/gerador.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/projeto.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/formulario.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/menu_tree.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/menu_campos.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/tipo_validacao.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/menu_cabecalho.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/googleAnalytics.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/menu_propriedades.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/menu_acoes_gerador.js"></script>
+        <script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/visualizar_tabelas.js"></script>
+
+    </head>
+    <body>
+        <!-- ----------- Cabecalho ----------- -->
+        <div class="ui-layout-north" >
+            <!--<div class="header">Outer - North</div>
+            <div class="content">
+                Conteudo
+            </div>-->
+            <ul class="toolbar myMenu">
+                <li class="first rootVoice {menu: 'menu_arquivo'}">
+                    Arquivo
+                </li>
+
+                <li class="rootVoice {menu: 'menu_opcoes'}">
+                    Opções
+                </li>
+                <li class="rootVoice {menu: 'menu_sobre'}">
+                    Sobre
+                </li>
+            </ul>
+
+            <div id="menu_arquivo" class="mbmenu">
+                <a class="{action: 'MenuCabecalho.NovoProjeto();', img: 'novo_projeto.png'}" href="#">Novo Projeto</a>
+                <a class="{action: 'MenuCabecalho.NovoFormulario();'} separa" ProjetoDependencia="true" disabled="true" href="#">Novo Formulário</a>
+                <a class="{action: 'MenuCabecalho.AbrirProjeto();'}" disabled="true" href="#">Abrir Projeto</a>
+                <a class="{action: 'MenuCabecalho.AbrirProjeto();'}" disabled="true" href="#">Fechar Projeto</a>
+                <a class="{action: 'MenuCabecalho.SalvarProjeto();', img: 'salvar.png'}" disabled="true" href="#">Salvar</a>
+                <a class="{action: 'MenuCabecalho.Logoff();', img: 'exit.png'}">Sair</a>
+            </div>
+
+            <div id="menu_opcoes" class="mbmenu">
+                <a class="{action: 'MenuCabecalho.TipoValidacao();'}">Tipo de Validação</a>
+                <a class="{action: 'MenuCabecalho.UsuarioSenha();', img: 'usuario_senha.png'}" href="#">Usuário e Senha</a>
+            </div>
+
+            <div id="menu_sobre" class="mbmenu">
+                <a class="{action: ''}">...</a>
+                <a class="{action: ''}">...</a>
+            </div>
+
+
+        </div>
+        <!-- ----------- Cabecalho ----------- -->

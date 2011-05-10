@@ -1,0 +1,396 @@
+<div id="dialog-tabelas-db" title="Tabelas do Banco de Dados">
+    <div class="dialog-tabelas-banco">
+
+    </div>
+</div>
+
+<div id="dialog-aguardando" title="Aguardando">
+    <div class="Centralizar Center">
+        <img src="<?php echo $this->baseUrl(); ?>/images/aguardando.gif" />
+    </div>
+</div>
+
+
+<div id="dialog-buscar-dados-tabelas" title="Buscar informações do banco">
+    <div class="msg">
+        <p>
+            Esta ação irá executar a rotina que fará a leitura de sua base de dados, deixando disponível todas as tabelas de seu banco de dados para que possa utilizar na criação dos formulários HTML.
+        </p>
+
+        <strong>
+            Deseja buscar as tabelas do banco de dados?
+        </strong>
+    </div>
+</div>
+
+
+<div id="dialog-gerar-codigo" title="Código Gerado">
+
+    <div class="ui-layout-west ui-widget-content ui-corner-all">
+        <div class="header">Projeto Gerado</div>
+        <div id="menu-codigo-gerado" class="content">
+
+        </div>
+        <!--<div class="footer">Rodape esquerda</div>-->
+    </div>
+    <div class="ui-layout-center ui-widget-content ui-corner-all">
+        <div id="codigo-arquivo" class="content">
+            código
+        </div>
+    </div>
+</div>
+
+
+<div id="dialog-novo-projeto" title="Novo Projeto">
+    <div id="tabs-novo-projeto">
+        <ul>
+            <li><a href="#tabs-1">Projeto</a></li>
+            <li><a href="#tabs-2">Conexão DB</a></li>
+            <li><a href="#tabs-3">Formulário</a></li>
+        </ul>
+        <div id="tabs-1">
+            <h2>Dados do Projeto</h2>
+            <table>
+                <tr>
+                    <td>
+                        Nome do projeto:
+                        <span class="campo-requerido">*</span>
+                    </td>
+                    <td>
+                        <input type="text" class="width200 ui-style" id="proj_nome_projeto" value="Projeto" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="tabs-2">
+            <h2>Dados de Acesso ao Banco de Dados</h2>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <b>Não utilizar conexão com o banco de dados </b>
+                        <input type="checkbox" id="proj_conexao_banco" value="nao" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="width80">
+                        Banco:
+                        <span class="campo-requerido">*</span>
+                    </td>
+                    <td>
+                        <select id="proj_banco" class="width205 ui-style">
+                            <option value="0" >Selecione</option>
+                            <option selected="selected" value="pdo_mysql">MySQL</option>
+                            <option value="pdo_pgsql">PostgreSQL</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Host:
+                        <span class="campo-requerido">*</span>
+                    </td>
+                    <td>
+                        <input type="text" class="width200 ui-style" id="proj_host" value="mysql07.ctncardoso.com.br" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Usuário:
+                        <span class="campo-requerido">*</span>
+                    </td>
+                    <td>
+                        <input type="text" class="width200 ui-style" id="proj_usuario" value="ctncardoso8" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Senha:
+                        <span class="campo-requerido">*</span>
+                    </td>
+                    <td>
+                        <input type="text" class="width200 ui-style" id="proj_senha" value="base_modelo" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        DB Nome:
+                        <span class="campo-requerido">*</span>
+                    </td>
+                    <td>
+                        <input type="text" class="width200 ui-style" id="proj_dbnome" value="ctncardoso8" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="Right">
+                        <input type="hidden" id="proj_resultado_conexao" value="false" />
+                        <span id="aguardando_teste_conexao"></span>
+                        &nbsp;
+                        <input type="button" id="proj_testar_conexao" class="ui-style" value="Testar Conexão" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="tabs-3">
+            <h2>Configuração do Formulário</h2>
+            <table>
+                <tr>
+                    <td>
+                        Nome do formulário:
+                        <span class="campo-requerido">*</span>
+                    </td>
+                    <td>
+                        <input type="text" class="width200 ui-style" id="proj_nome_formulario" value="Form 1" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nome Controller:
+                    </td>
+                    <td>
+                        <input type="text" class="width200 ui-style" id="proj_nome_controller" value="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nome Action:
+                    </td>
+                    <td>
+                        <input type="text" class="width200 ui-style" id="proj_nome_action" value="" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div id="dialog-novo-formulario" title="Novo Formulário">
+    <div id="tabs-novo-formulario">
+        <ul>
+            <li><a href="#tabs-1">Formulário</a></li>
+        </ul>
+        <div id="tabs-1">
+            <h2>Configuração do Formulário</h2>
+            <table>
+                <tr>
+                    <td>
+                        Nome do formulário:
+                        <span class="campo-requerido">*</span>
+                    </td>
+                    <td>
+                        <input type="text" class="width200 ui-style" id="form_nome_formulario" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nome Controller:
+                    </td>
+                    <td>
+                        <input type="text" class="width200 ui-style" id="form_nome_controller" value="" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nome Action:
+                    </td>
+                    <td>
+                        <input type="text" class="width200 ui-style" id="form_nome_action" value="" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div id="dialog-notificacao" title="">
+    <p>
+        <span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>
+        <span class="msg"></span>
+    </p>
+</div>
+
+
+<div id="dialog-tipo-validacao" title="Tipo de Validação">
+    <div class="width370 Centralizar">
+        <form>
+            <input type="hidden" id="tipo_validacao_id" />
+            <table>
+                <tr>
+                    <td>
+                        Nome:
+                        <span class="campo-requerido">*</span>
+                    </td>
+                    <td>
+                        <input type="text" class="width200 ui-style" id="tipo_validacao_nome" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nome logico:
+                        <span class="campo-requerido">*</span>
+                    </td>
+                    <td>
+                        <input type="text" class="width200 ui-style" id="tipo_validacao_nome_logico" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Expressão Regular:
+                        <span class="campo-requerido">*</span>
+                    </td>
+                    <td>
+                        <input type="text" class="width200 ui-style" id="tipo_validacao_regexp" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="Right">
+                        <input type="button" value="Salvar" id="tipo_validacao_salvar" class="ui-style" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div class="ui-widget-content padding10">
+
+        <table id="listagem-tipo-validacao" class="Centralizar tabelas-bordas" cellspacing="1">
+            <tr>
+                <td class="width150 Center titulo">
+                    Nome
+                </td>
+                <td class="width300 Center titulo">
+                    Expressão Regular
+                </td>
+                <td class="width50 Center titulo"></td>
+            </tr>
+        </table>
+        
+    </div>
+</div>
+
+<!-- Dialog Excluir -->
+<div id="dialog-excluir-linha-formulario" title="Excluir Linha?">
+    <p>
+        <span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>
+        Deseja realmente remover esta linha?
+    </p>
+</div>
+<!-- Fim Dialog Excluir -->
+
+<div id="dialog-tabelas-campos" title="Tabelas e Campos">
+    <div class="Center">
+        <table>
+            <tr>
+                <td class="width230 Center">
+                    Nome das Tabelas
+                </td>
+                <td class="width230 Center">
+                    Nome dos Campos
+                </td>
+            </tr>
+            <tr>
+                <td class="Center">
+                    <select class="width220 height300 ui-style" id="tabelas_banco" size="2" >
+                    </select>
+                </td>
+                <td class="Center">
+                    <select class="width220 height300 ui-style" id="campos_tabela" size="2" >
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+
+
+<div id="dialog-options-select" title="Options Campo Select">
+    <div class="Center">
+        <h2>
+            Cadastrar Options
+        </h2>
+        <table>
+            <tr>
+                <td class="width230 Center">
+                    Texto: <input type="text" id="text-option-select" class="width150 ui-style" />
+                </td>
+                <td class="width230 Center">
+                    Value: <input type="text" id="value-option-select" class="width110 ui-style" />
+                    <input type="button" class="ui-style" value="Salvar" id="salvar-option-select" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <table id="listagem-options-select" class="Centralizar tabelas-bordas" cellspacing="1">
+                        <tr>
+                            <td class="width120 Center titulo">
+                                Text
+                            </td>
+                            <td class="width120 Center titulo">
+                                Value
+                            </td>
+                            <td class="width50 Center titulo"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <h2>
+            Preencher options com dados de uma tabela
+            <input type="checkbox" id="options-campos-base-dados" />
+        </h2>
+        <table>
+            <tr>
+                <td class="Center">
+                    <select class="width220 height215 ui-style" id="options-tabelas-banco" size="2" >
+                    </select>
+                </td>
+                <td class="Center">
+                    Value
+                    <select class="width220 height90 ui-style" id="options-campos-tabela-value" size="2" >
+                    </select>
+                    Text
+                    <select class="width220 height90 ui-style" id="options-campos-tabela-text" size="2" >
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+
+<div id="dialog-usuario-sistema" title="Usuário Sistema">
+    <div class="ui-layout-pane ui-widget-content">
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        Usuário:
+                    </td>
+                    <td>
+                        <input type="text" id="usuario" class="ui-style" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Senha:
+                    </td>
+                    <td>
+                        <input type="password" id="senha" class="ui-style" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Senha:
+                    </td>
+                    <td>
+                        <input type="password" id="confirma_senha" class="ui-style" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>

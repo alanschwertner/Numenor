@@ -1,0 +1,110 @@
+
+/* **** formulario **** */
+
+
+.itens-formulario{
+    margin:0 !important;
+    padding:0;
+   /* width: 99%;*/
+    color: #000000;
+    border-right: 1px dashed #000000;
+    height: 100%;
+    list-style-type: none;
+
+}
+.itens-formulario li{
+
+    left:0;
+    top:0;
+    margin:8px 4px !important;
+    padding:6px !important;
+    list-style-type: none;
+    position:relative;
+    clear:both;
+    line-height: normal;
+    border: 1px solid transparent;
+    background-color: #FFF;
+    
+    /*background-color: #F6F6F6;*/
+}
+
+.itens-formulario li:hover{
+    border: 1px dotted #000000;
+}
+
+.itens-formulario li.ui-selected{
+    border: 1px solid #000000;
+}
+
+.conteudo-formulario{
+    display:inline-block;
+    width:100%;
+}
+
+h2.titulo-formulario {
+    font-weight: bold;
+}
+
+.label-campo-formulario{
+    margin-right:3px;
+    float: left;
+    /*outline:1px dashed #999999;*/
+    display:inline-block;
+    padding:3px;
+    font-size: 12px;
+}
+
+.campo-requerido {
+    color: #FF0000;
+    margin-left: 5px;
+}
+
+.input-formulario{
+    display:inline-block;
+}
+
+.acoes-formulario {
+    border-color: #000000;
+    border-width:1px 1px medium;
+    /*ackground:none repeat scroll 0 0 #F6F6F6;*/
+    background:none repeat scroll 0 0 #FFF;
+    border-style:solid solid none;
+    position:absolute;
+    right:-1px;
+    top:-29px;
+    width: 30px;
+    padding: 5px;
+    text-align: center;
+    display: none;
+}
+
+.itens-formulario li.ui-selected div.acoes-formulario{
+    display: block;
+}
+
+/*.mover-formulario{
+    width: 16px;
+    height: 16px;
+    padding: 0 3px;
+    background: url(../images/icon/move-formulario.png) no-repeat;
+    display:inline-block;
+    cursor: n-resize;
+}*/
+
+/*.propriedades{
+    width: 16px;
+    height: 16px;
+    padding: 0 3px;
+    background: url(../images/icon/propriedades.png) no-repeat;
+    display:inline-block;
+}*/
+
+.excluir{
+    width: 16px;
+    height: 16px;
+    padding: 0 3px;
+    background: url(../img/icon/excluir.png) no-repeat;
+    display:inline-block;
+}
+
+/* ---------------------- */

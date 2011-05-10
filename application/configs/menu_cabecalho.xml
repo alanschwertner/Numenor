@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <nav>
+        <configdb>
+            <label>Configdb</label>
+            <module>default</module>
+            <controller>bancoDados</controller>
+            <action>index</action>
+            <resource>admin:index</resource>
+            <privilege>index</privilege>
+            <page>
+                <cadastrar>
+                    <label>Cadastrar</label>
+                    <module>admin</module>
+                    <controller>configdb</controller>
+                    <action>cadastrar</action>
+                </cadastrar>
+            </page>
+        </configdb>
+        <sair>
+            <label>Logout</label>
+            <module>admin</module>
+            <controller>autenticacao</controller>
+            <action>logout</action>
+            <resource>admin:autenticacao</resource>
+            <privilege>logout</privilege>
+        </sair>
+    </nav>
+</config>

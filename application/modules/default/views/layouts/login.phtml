@@ -1,0 +1,62 @@
+<?php echo $this->doctype(); ?>
+<html>
+    <head>
+        <?php echo $this->headMeta(); ?>
+        <?php echo $this->headTitle(); ?>
+
+        <link rel="stylesheet" type="text/css" href="/css/plugin/ui/aristo/jquery-ui-1.8.7.custom.css" />
+
+        <link rel="stylesheet" type="text/css" href="/css/login.css" />
+        <link rel="stylesheet" type="text/css" href="/css/tamanhos.css" />
+
+
+        <script type="text/javascript" src="/js/jquery/jquery-1.4.4.min.js"></script>
+        <script type="text/javascript" src="/js/jquery/plugin/ui/jquery-ui-1.8.11.custom.min.js"></script>
+
+        <script type="text/javascript" src="/js/login.js"></script>
+        <script type="text/javascript" src="/js/googleAnalytics.js"></script>
+
+    </head>
+    <body>
+
+        <div class="login ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+            <div class="titulo ui-state-default ui-state-active ui-corner-all"><b>Númenor</b></div>
+            <div class="campos">
+                <form id="form_login">
+                    <table>
+                        <tr>
+                            <td class="width70 Right">
+                                Usuário:
+                            </td>
+                            <td>
+                                <input type="text" id="usuario" class="width200 ui-style" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="Right">
+                                Senha:
+                            </td>
+                            <td>
+                                <input type="password" id="senha" class="width200 ui-style" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="Right">
+                                <span id="carregando"></span>
+                                &nbsp;
+                                <input type="submit" class="ui-style" id="verificar_login" value="Login" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div id="dialog-notificacao" title="">
+            <p>
+                <span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>
+                <span class="msg"></span>
+            </p>
+        </div>
+
+    </body>
+</html>
